@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'bun:test';
 import { createAttributeMatcher, AttributeMatcher } from '../src/matcher';
 
 const DATA_TEST = "data-test";

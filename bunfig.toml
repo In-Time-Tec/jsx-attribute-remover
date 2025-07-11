@@ -1,0 +1,7 @@
+# Bun configuration file
+
+[test]
+# Test runner configuration
+preload = ["./test/setup.ts"]
+coverage = true
+coverageSkipTestFiles = true

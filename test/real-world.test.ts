@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'bun:test';
 import removeAttributes from '../src/index';
 import { transformCode } from '../src/transform';
 import { createAttributeMatcher } from '../src/matcher';

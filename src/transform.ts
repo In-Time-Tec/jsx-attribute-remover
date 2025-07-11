@@ -1,9 +1,9 @@
 import { parse } from '@babel/parser';
 import traverse from '@babel/traverse';
 import generate from '@babel/generator';
-import { JSXAttribute } from '@babel/types';
+import type { JSXAttribute } from '@babel/types';
 import type { NodePath } from '@babel/traverse';
-import { AttributeMatcher } from './matcher';
+import type { AttributeMatcher } from './matcher';
 
 interface TransformResult {
   code: string;

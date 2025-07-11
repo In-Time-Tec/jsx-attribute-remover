@@ -1,12 +1,12 @@
-# Contributing to React Attribute Remover
+# Contributing to JSX Attribute Remover
 
-Thank you for your interest in contributing to React Attribute Remover! We welcome contributions from the community.
+Thank you for your interest in contributing to JSX Attribute Remover! We welcome contributions from the community.
 
 ## Getting Started
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/your-username/react-attribute-remover.git`
-3. Install dependencies: `npm install`
+2. Clone your fork: `git clone https://github.com/your-username/jsx-attribute-remover.git`
+3. Install dependencies: `bun install`
 4. Create a new branch: `git checkout -b feature/your-feature-name`
 
 ## Development
@@ -15,25 +15,22 @@ Thank you for your interest in contributing to React Attribute Remover! We welco
 
 ```bash
 # Run all tests
-npm test
+bun test
 
 # Run tests in watch mode
-npm run test
-
-# Run tests once
-npm run test:run
+bun test --watch
 ```
 
 ### Building
 
 ```bash
-npm run build
+bun run build
 ```
 
 ### Development Mode
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 ## Making Changes
@@ -59,7 +56,7 @@ npm run dev
 
 ## Pull Request Process
 
-1. Ensure all tests pass: `npm run test:run`
+1. Ensure all tests pass: `bun test`
 2. Update documentation if you've made API changes
 3. Add a descriptive title and description to your PR
 4. Link any related issues

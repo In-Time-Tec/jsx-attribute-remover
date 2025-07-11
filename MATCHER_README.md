@@ -1,11 +1,11 @@
 # Attribute Matcher Module
 
-The attribute matcher is a core module of react-attribute-remover that provides high-performance pattern matching for JSX attributes. It converts various matching options (strings, regexes, functions) into optimized predicate functions.
+The attribute matcher is a core module of jsx-attribute-remover that provides high-performance pattern matching for JSX attributes. It converts various matching options (strings, regexes, functions) into optimized predicate functions.
 
 ## Usage
 
 ```typescript
-import { createAttributeMatcher } from 'react-attribute-remover';
+import { createAttributeMatcher } from 'jsx-attribute-remover';
 
 // String matching
 const matcher1 = createAttributeMatcher('data-test');

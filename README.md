@@ -1,6 +1,6 @@
-# React Attribute Remover
+# JSX Attribute Remover
 
-A Vite plugin for automatically removing specified attributes from React/JSX components during the build process. Perfect for stripping out development-only attributes like `data-testid`, `data-cy`, or any custom attributes from your production builds.
+A Bun-native Vite plugin for automatically removing specified attributes from JSX components during the build process. Perfect for stripping out development-only attributes like `data-testid`, `data-cy`, or any custom attributes from your production builds.
 
 ## Features
 
@@ -10,19 +10,22 @@ A Vite plugin for automatically removing specified attributes from React/JSX com
 - 🔧 **Development mode** - Optionally preserve attributes in development
 - 📦 **TypeScript support** - Full type definitions included
 - 🎮 **Vite integration** - Seamless integration with Vite's build pipeline
+- 🐰 **Bun-native** - Built and tested with Bun for optimal performance
 
 ## Installation
 
 ```bash
-npm install --save-dev react-attribute-remover
-```
+# Using Bun (recommended)
+bun add --dev jsx-attribute-remover
 
-```bash
-yarn add --dev react-attribute-remover
-```
+# Using npm
+npm install --save-dev jsx-attribute-remover
 
-```bash
-pnpm add -D react-attribute-remover
+# Using yarn
+yarn add --dev jsx-attribute-remover
+
+# Using pnpm
+pnpm add -D jsx-attribute-remover
 ```
 
 ## Quick Start
@@ -31,7 +34,7 @@ Add the plugin to your `vite.config.ts`:
 
 ```typescript
 import { defineConfig } from 'vite';
-import removeAttributes from 'react-attribute-remover';
+import removeAttributes from 'jsx-attribute-remover';
 
 export default defineConfig({
   plugins: [
@@ -173,7 +176,7 @@ Creates a Vite plugin instance with the specified options.
 The plugin exports utilities for creating attribute matchers:
 
 ```typescript
-import { createAttributeMatcher } from 'react-attribute-remover';
+import { createAttributeMatcher } from 'jsx-attribute-remover';
 
 const matcher = createAttributeMatcher(['data-test', /^aria-/]);
 console.log(matcher.matchAttribute('data-test'));     // true
@@ -240,7 +243,7 @@ import removeAttributes, {
   PluginOptions, 
   AttributeOption,
   AttributeMatcher 
-} from 'react-attribute-remover';
+} from 'jsx-attribute-remover';
 ```
 
 ## Troubleshooting
@@ -257,6 +260,34 @@ import removeAttributes, {
 1. Ensure you have a compatible Vite version (^5.0.0)
 2. Check for syntax errors in your JSX
 3. Verify your TypeScript configuration if using `.tsx` files
+
+## Development with Bun
+
+This package is developed using Bun, a fast all-in-one JavaScript runtime. To contribute:
+
+```bash
+# Install dependencies
+bun install
+
+# Run tests
+bun test
+
+# Run tests in watch mode
+bun test --watch
+
+# Build the package
+bun run build
+
+# Development mode
+bun run dev
+```
+
+### Why Bun?
+
+- **Fast**: Bun is significantly faster than Node.js for running tests and building
+- **Built-in TypeScript**: No configuration needed for TypeScript support
+- **Native test runner**: No need for separate test frameworks
+- **Efficient package management**: Faster installation and smaller lockfile
 
 ## Contributing
 

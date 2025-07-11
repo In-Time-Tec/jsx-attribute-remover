@@ -35,6 +35,11 @@ lerna-debug.log*
 *~
 .DS_Store
 
+# Bun specific
+bun.lockb
+.bun/
+
 # Lock files (keep one type)
+# package-lock.json
 # yarn.lock
 # pnpm-lock.yaml

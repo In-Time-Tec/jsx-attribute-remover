@@ -1,5 +1,5 @@
-export { createAttributeMatcher, AttributeMatcher } from './matcher';
-export type { AttributeOption } from './matcher';
+export { createAttributeMatcher } from './matcher';
+export type { AttributeMatcher, AttributeOption } from './matcher';
 export { transformCode } from './transform';
 export { validateOptions } from './config';
 export type { PluginOptions } from './config';

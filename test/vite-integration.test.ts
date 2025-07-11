@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'bun:test';
 import removeAttributes from '../src/index';
 import type { Plugin } from 'vite';
 
