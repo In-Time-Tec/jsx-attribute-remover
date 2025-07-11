@@ -46,7 +46,7 @@
     "optimization",
     "production"
   ],
-  "author": "In-Time-Tec",
+  "author": "In Time Tec, LLC",
   "license": "Apache-2.0",
   "devDependencies": {
     "@babel/core": "^7.23.0",
