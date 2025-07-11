@@ -1,5 +1,5 @@
 {
-  "name": "jsx-attribute-remover",
+  "name": "@intimtec/jsx-attribute-remover",
   "version": "1.0.0",
   "description": "A Vite plugin for removing specified attributes from JSX components at build time",
   "type": "module",
@@ -8,11 +8,11 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/jsx-attribute-remover.git"
+    "url": "https://github.com/In-Time-Tec/jsx-attribute-remover.git"
   },
-  "homepage": "https://github.com/yourusername/jsx-attribute-remover#readme",
+  "homepage": "https://github.com/In-Time-Tec/jsx-attribute-remover#readme",
   "bugs": {
-    "url": "https://github.com/yourusername/jsx-attribute-remover/issues"
+    "url": "https://github.com/In-Time-Tec/jsx-attribute-remover/issues"
   },
   "exports": {
     ".": {
@@ -46,8 +46,8 @@
     "optimization",
     "production"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "In-Time-Tec",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@babel/core": "^7.23.0",
     "@babel/generator": "^7.23.0",
@@ -62,5 +62,9 @@
   },
   "peerDependencies": {
     "vite": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

@@ -5,7 +5,7 @@ The attribute matcher is a core module of jsx-attribute-remover that provides hi
 ## Usage
 
 ```typescript
-import { createAttributeMatcher } from 'jsx-attribute-remover';
+import { createAttributeMatcher } from '@intimtec/jsx-attribute-remover';
 
 // String matching
 const matcher1 = createAttributeMatcher('data-test');

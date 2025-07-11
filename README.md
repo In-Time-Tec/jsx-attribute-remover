@@ -16,16 +16,16 @@ A Bun-native Vite plugin for automatically removing specified attributes from JS
 
 ```bash
 # Using Bun (recommended)
-bun add --dev jsx-attribute-remover
+bun add --dev @intimtec/jsx-attribute-remover
 
 # Using npm
-npm install --save-dev jsx-attribute-remover
+npm install --save-dev @intimtec/jsx-attribute-remover
 
 # Using yarn
-yarn add --dev jsx-attribute-remover
+yarn add --dev @intimtec/jsx-attribute-remover
 
 # Using pnpm
-pnpm add -D jsx-attribute-remover
+pnpm add -D @intimtec/jsx-attribute-remover
 ```
 
 ## Quick Start
@@ -34,7 +34,7 @@ Add the plugin to your `vite.config.ts`:
 
 ```typescript
 import { defineConfig } from 'vite';
-import removeAttributes from 'jsx-attribute-remover';
+import removeAttributes from '@intimtec/jsx-attribute-remover';
 
 export default defineConfig({
   plugins: [
@@ -176,7 +176,7 @@ Creates a Vite plugin instance with the specified options.
 The plugin exports utilities for creating attribute matchers:
 
 ```typescript
-import { createAttributeMatcher } from 'jsx-attribute-remover';
+import { createAttributeMatcher } from '@intimtec/jsx-attribute-remover';
 
 const matcher = createAttributeMatcher(['data-test', /^aria-/]);
 console.log(matcher.matchAttribute('data-test'));     // true
@@ -243,7 +243,7 @@ import removeAttributes, {
   PluginOptions, 
   AttributeOption,
   AttributeMatcher 
-} from 'jsx-attribute-remover';
+} from '@intimtec/jsx-attribute-remover';
 ```
 
 ## Troubleshooting
@@ -295,4 +295,20 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-ISC License - see LICENSE file for details
+Apache License 2.0 - see LICENSE file for details
+
+## Copyright
+
+Copyright 2024 InTimeTec
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
